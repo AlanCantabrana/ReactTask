@@ -7,7 +7,7 @@ class Auth {
         localStorage.setItem('user-data', JSON.stringify(data.username))
         localStorage.setItem('token', data.token)
         this.authenticated = true;
-        callback() // callback it's a function
+        callback() // callback it's a function// te manda a una pagina una vez logueado
     }
     logout(callback) {
         // clean storage, erase JWT, erase user data.
